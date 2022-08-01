@@ -8,33 +8,159 @@
   
   <title>Frontend Mentor | E-commerce product page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
+<div class="page-container">
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+  <header class="page-container__header">
 
-  Sneaker Company
+    <div class="header-container">
 
-  Fall Limited Edition Sneakers
+      <div class="header-container__menu">
+        <img class="header-container__img-hamburger" src="./images/icon-menu.svg" alt="menu for navigation">
+      </div>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+      <div class="header-container__img-container">
+        <img class="header-container__img-logo" src="./images/logo.svg" alt="sneakers logo">
+      </div>
 
-  $125.00
-  50%
-  $250.00
+      <nav class="header-container__navigation">
+        <ul class="header-container__list-container">
+          <li class="header-container__navigation-link-container">
+            <a class="header-container__navigation-link" href="#">Collections</a>
+          </li>
+          <li class="header-container__navigation-link-container">
+            <a class="header-container__navigation-link" href="#">Men</a>
+          </li>
+          <li class="header-container__navigation-link-container">
+            <a class="header-container__navigation-link" href="#">Women</a>
+          </li>
+          <li class="header-container__navigation-link-container">
+            <a class="header-container__navigation-link" href="#">About</a>
+          </li>
+          <li class="header-container__navigation-link-container">
+            <a class="header-container__navigation-link" href="#">Contact</a>
+          </li>
+        </ul>
 
-  0
-  Add to cart
+      </nav>
+
+      <div class="header-container__cart-and-avatar-container">
+
+        <div class="header-container__cart-container">
+          <img class="header-container__cart-img" src="./images/icon-cart.svg" alt="basket for all items">
+        </div>
+
+        <div class="header-container__avatar-container">
+          <img class="header-container__avatar-img" src="./images/image-avatar.png" alt="user avatar">
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="page-container_main">
+    <section class="gallery-section">
+
+      <div class="gallery-section__container gallery-section__container--big">
+        <div><img src="./images/image-product-1.jpg" alt="shoes first view"></div>
+      </div>
+
+      <div class="gallery-section__container gallery-section__container--small">
+
+        <div>
+          <img src="./images/image-product-1-thumbnail.jpg" alt="shoes firs small view">
+        </div>
+        <div>
+          <img src="./images/image-product-2-thumbnail.jpg" alt="shoes second small view">
+        </div>
+        <div>
+          <img src="./images/image-product-3-thumbnail.jpg" alt="shoes third small view">
+        </div>
+        <div>
+          <img src="./images/image-product-4-thumbnail.jpg" alt="shoes forth small view">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="page-container__product-section">
+
+      <div class="product-container">
+
+        <div class="product-container__all-descripction">
+
+          <div class="product-container__shoe-type-container">
+            <p class="product-container-shoe-type">Sneaker Company</p>
+          </div>
+
+          <div class="product-container__shoe-name-container">
+            <h1 class="product-container-shoe-name">Fall Limited Edition Sneakers</h1>
+          </div>
+
+          <div class="product-container__shoe-descripction-container">
+            <p class="product-container__shoe-descripction">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+              durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          </div> 
+
+        </div>
+
+        <div class="product-container__all-prices-container">
+
+          <div class="product-container__actual-price-container">
+            <p class="product-container__actual-price">$125.00</p>
+          </div>
+
+          <div class="product-container__sale-container">
+            <p class="product-container__sale">50%</p>
+          </div>
+
+          <div class="product-container__regular-price-container">
+            <p class="product-container__regular-price">$250.00</p>
+          </div>
+        
+        </div>
+
+        <div class="product-container__all-buttons">
+
+          <div class="product-container__all-btn-operations">
+
+            <div class="product-container__btn-add-product-container">
+              <button class="product-container__btn-add-product"></button>
+            </div>
+
+            <div class="product-container__btn-product-amount-container">
+              <span class="product-container__btn-product-amount">0</span>
+            </div>
+
+            <div class="product-container__btn-delete-product">
+              <button class="product-container__btn-delete"></button>
+            </div>
+
+          </div>
+
+          <div class="product-container__btn-add-product-container">
+            <button class="product-container__btn-add-product">
+              <img class="product-container__btn-add-product-img" src="./images/icon-cart.svg" alt="add to shopping cart">Add to cart
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
